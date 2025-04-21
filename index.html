@@ -35,20 +35,20 @@
       font-weight: bold;
     }
     header {
-      background: url('PHOTO-2025-04-14-19-16-21.jpg') center/cover no-repeat;
+      background: var(--sable); /* Fond identique au reste de la page */
       height: 80vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--blanc);
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+      color: #333;
       text-align: center;
     }
     header h1 {
       font-size: 3em;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(255, 255, 255, 0.7);
       padding: 20px;
       border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     section {
       padding: 60px 20px;
@@ -101,6 +101,11 @@
       header h1 { font-size: 2em; padding: 15px; }
     }
   </style>
+  <script>
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    });
+  </script>
 </head>
 <body>
 
